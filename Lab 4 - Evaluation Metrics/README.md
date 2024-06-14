@@ -25,9 +25,6 @@ In this lab, you will perform the tasks of a few different personae in the **AI 
 Go to the **AI Use Cases** screen and create a new use case. Give it a descriptive name and put it into state **Awaiting Development**.
 ![](images/image1.png)
 
-For the rest of this lab, we will assume you reuse the prompt you created in Lab 1, called **Insurance Summarization Prompt**. If you feel ambitious, you can also create a new prompt and start from scratch. Make sure you test and evaluate the prompt if you do so.
-But note that later steps in this lab use predefined data sets to simulate a drift situation. If you use your own prompt, you will also have to generate appropriate data sets, which may be a lengthy process. 
-
 ---
 ### 1. Govern your prompt <a name="govern-prompt-in-use-case"/>
 ---
