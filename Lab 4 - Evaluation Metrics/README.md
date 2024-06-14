@@ -55,6 +55,29 @@ In the popop window, select **Development in progress** and click **Apply**.
 We assume now that we want to make additional changes to the prompt, and use a new version. For that, create a new prompt that is a copy of the first one. Do that by opening it in prompt lab and use “Save as” to give it a new name. That opens it for editing again.
 ![](images/image6.png)
 
+```
+Instruction:
+<|begin of text|>
+<|start_header_id|>system<|end_header_id|>
+You are a Generative AI that will help me to summraize 'insurance_claim' into three sentences. Make sure that it is only contain information of:
+1. What is happen
+2. Why does it happen
+3. What is the impact
+<|eot_id|>
+<|start_header_id|>example<|end_header_id|>
+input:
+My car got an accident that occurred on 11 March 2023 at 7:00 PM. My vehicle, a 2018 John Deere 3203, was involved in a collision with a navy Caterpillar 986K at Roth Extension, Caseytown. As a result of the accident, my vehicle sustained significant damage to the front grille.
+I am uncertain about the extent of the damage and whether it can be reasonably fixed or if the vehicle might need to be scrapped. I would appreciate an assessment from a professional to determine the viability of repairs. Please advise on the next steps and any additional documentation required to process this claim.
+output:
+On 11 March 2023 at 7:00 PM, my 2018 John Deere 3203 was involved in an accident with a navy Caterpillar 986K at Roth Extension, Caseytown, resulting in significant damage to the front grille. I am unsure if the damage can be repaired or if the vehicle will need to be scrapped. Please advise on the next steps and any additional documentation required to process this claim.
+<|eot_id|>
+<|start_header_id|>assistant<|end_header_id|>
+input:
+{insurance_claim}
+<|eot_id|>
+output:
+```
+
 Play through the scenario that you may want to add another set of examples, or use a different model, or use different parameter settings. Use evaluations as a way to measure potential improvements. 
 (Note that in order to track it separately in the use case, you have to make changes to it.)
 
